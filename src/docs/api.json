@@ -1,6 +1,6 @@
 {
   "schemes": "{{ marshal .Schemes }}",
-  "swagger": "3.0",
+  "swagger": "2.0",
   "info": {
     "description": "{{.Description}}",
     "title": "{{.Title}}",
