@@ -6,6 +6,7 @@ import (
 	_"gin-api-boilerplate/src/apps/examples"
 	"gin-api-boilerplate/src/middlewares"
 	"gin-api-boilerplate/src/utils"
+	_"gin-api-boilerplate/src/docs"
 
 	swaggerFiles "github.com/swaggo/files"
 	ginSwagger "github.com/swaggo/gin-swagger"
