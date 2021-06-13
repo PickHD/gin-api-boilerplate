@@ -1,0 +1,60 @@
+{
+  "schemes": "{{ marshal .Schemes }}",
+  "swagger": "3.0",
+  "info": {
+    "description": "{{.Description}}",
+    "title": "{{.Title}}",
+    "contact": {
+      "name": "Support",
+      "email": "taufikjanuar35@gmail.com"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    },
+    "version": "{{.Version}}"
+  },
+  "host": "{{.Host}}",
+  "basePath": "{{.BasePath}}",
+  "paths": {
+    "/ping": {
+      "get": {
+        "description": "Pinging server API",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "Ping"
+        ],
+        "summary": "Checks if the server is alive.",
+        "responses": {
+          "200": {
+            "description": "Success responses from API",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "integer",
+                  "example": 200
+                },
+                "success": {
+                  "type": "boolean",
+                  "example": true
+                },
+                "message": {
+                  "type": "string",
+                  "example": "Pong"
+                },
+                "error": null,
+                "data": null
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
