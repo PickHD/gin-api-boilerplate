@@ -12,7 +12,7 @@
 - Well structured boilerplates (can be scalling into microservices or monolith).
 - Database (**postgres**) configuration (including AutoMigrate from **gorm** ORM).
 - Router setup,api versioning **(v1)**, with bonus ```pinging server``` endpoint.
-- Documentation Templates (with **OA3 Swagger**).
+- Documentation Templates (with **OA2 Swagger**).
 - Middlewares **CORS** & **RequestId** Header.
 - Bunch of utilites including : **response formatter,generator,paginator,validator**.
 - Included with sample of create apps (**base,models,controllers,services**).
